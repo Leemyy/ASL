@@ -10,9 +10,9 @@ state("ROTTR")
 	int  Cutscene		: 0x1A22014;
 	bool FMV			: 0x22D83D8;
 	bool Loading		: 0x2D27948, 0x4C;
-	int Alive			: "gameoverlayrenderer64.dll", 0x15FA9C;
+	long Alive			: 0x2CF3578; //counts up at about 1000000 per second
 	float Percentage	: 0x1A21EE8, 0xC38;
-	ushort PlayTime		: 0x22D4690, 0x144;
+	uint PlayTime		: 0x22D4690, 0x144;
 	int XP				: 0x1092680, 0x0, 0x280, 0x18, 0x38;
 	float X				: 0x15F6730;
 	float Y				: 0x15F6734;
@@ -256,7 +256,7 @@ update
 	{
 		bool prev = vars.crashTime;
 		if (current.Alive == old.Alive)
-			vars.crashTime = vars.timeout++ > refreshRate / 2 + 1;
+			vars.crashTime = vars.timeout++ > refreshRate / 5 + 1;
 		else
 		{
 			vars.crashTime = false;
