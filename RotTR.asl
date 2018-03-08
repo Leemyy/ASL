@@ -28,6 +28,8 @@ startup
 	vars.ticks = 0;
 	vars.unitValue = 50f / 451;
 	vars.split = -1;
+	vars.autoSplit = false;
+	vars.expectedSplit = 0;
 	vars.collectibles = 1;
 	vars.gainedXP = 0;
 	vars.timeout = 0;
@@ -146,6 +148,8 @@ startup
 	{
 		vars.Log("--Start--");
 		vars.split = -1;
+		vars.autoSplit = false;
+		vars.expectedSplit = 0;
 		vars.step = 0;
 		vars.collectibles = 0;
 		vars.gainedXP = 0;
@@ -351,6 +355,23 @@ split
 	else
 		deltaXP = 0;
 
+	while (timer.CurrentSplitIndex > vars.expectedSplit)
+	{
+		if (vars.autoSplit)
+			vars.autoSplit = false;
+		else
+			vars.Log("-Split "+ vars.expectedSplit +" Skipped Manually-");
+
+		int nextSplit = vars.split + 1;
+		while (++vars.split < vars.splitNames.Length)
+			if (settings[vars.splitNames[vars.split]])
+			{
+				if (vars.split != nextSplit)
+					vars.Log("-Skipped to " + vars.splitNames[vars.split] + " ("+ vars.split +")");
+				break;
+			}
+		vars.expectedSplit++;
+	}
 	bool next = false;
 	switch ((int)vars.split)
 	{
@@ -452,14 +473,7 @@ split
 	{
 		vars.Log(">Split (" + vars.splitNames[vars.split]+")");
 		vars.step = 0;
-		int nextSplit = vars.split + 1;
-		while (++vars.split < vars.splitNames.Length)
-			if (settings[vars.splitNames[vars.split]])
-			{
-				if (vars.split != nextSplit)
-					vars.Log("-Skipped to " + vars.splitNames[vars.split] + " ("+ vars.split +")");
-				break;
-			}
+		vars.autoSplit = true;
 		return true;
 	}
 
