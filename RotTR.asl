@@ -85,7 +85,9 @@ startup
 		//Trebuchet Skip
 		new int[]{1193649042, -961871283, 1169293195}, 
 		//End
-		new int[]{-1013344957, -1015526939, -1004660831}
+		new int[]{-1013344957, -1015526939, -1004660831}, 
+		//Mines 2
+		new int[]{-982394933, -980081238, 1147204534}
 	};
 	vars.positions = positions;
 
@@ -395,7 +397,8 @@ split
 			next = vars.AtPosition(current, vars.positions[4]);
 			break;
 		case 11: //Mines
-			next = vars.AtPosition(current, vars.positions[5]);
+			next = vars.AtPosition(current, vars.positions[5])
+				|| vars.AtPosition(current, vars.positions[9]);
 			break;
 		case 12: //Ridgeline
 			next = vars.AtPosition(current, vars.positions[6]);
