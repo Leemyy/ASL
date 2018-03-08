@@ -158,7 +158,7 @@ startup
 	//settings
 	//settings.Add(string id, bool default_value, string description = null, string parent = null)
 	//settings.SetToolTip(string id, string tooltip);
-	settings.Add("debug", true, "Enable debug logging");
+	settings.Add("debug", false, "Enable debug logging");
 	settings.Add("logStry", true, "Story progress", "debug");
 	settings.Add("logColl", true, "Collectibles", "debug");
 	settings.Add("logXP", true, "Experience", "debug");
