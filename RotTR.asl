@@ -9,7 +9,7 @@ state("ROTTR")
 	bool LegacyFMV		: 0xF9A990;
 	int  Cutscene		: 0x1A22014;
 	bool FMV			: 0x22D83D8;
-	bool Loading		: 0x2D27948, 0x4C;
+	bool Loading		: 0xF9A990;
 	long Alive			: 0x2CF3578; //counts up at about 1000000 per second
 	float Percentage	: 0x1A21EE8, 0xC38;
 	uint PlayTime		: 0x22D4690, 0x144;
@@ -29,7 +29,7 @@ startup
 	vars.unitValue = 50f / 451;
 	vars.split = -1;
 	vars.autoSplit = false;
-	vars.expectedSplit = 0;
+	vars.expectedSplit = -1;
 	vars.collectibles = 1;
 	vars.gainedXP = 0;
 	vars.timeout = 0;
@@ -149,7 +149,7 @@ startup
 		vars.Log("--Start--");
 		vars.split = -1;
 		vars.autoSplit = false;
-		vars.expectedSplit = 0;
+		vars.expectedSplit = -1;
 		vars.step = 0;
 		vars.collectibles = 0;
 		vars.gainedXP = 0;
@@ -355,11 +355,11 @@ split
 	else
 		deltaXP = 0;
 
-	while (timer.CurrentSplitIndex > vars.expectedSplit)
+	while (timer.CurrentSplitIndex > vars.expectedSplit || vars.autoSplit || vars.split == -1)
 	{
 		if (vars.autoSplit)
 			vars.autoSplit = false;
-		else
+		else if (vars.split != -1)
 			vars.Log("-Split "+ vars.expectedSplit +" Skipped Manually-");
 
 		int nextSplit = vars.split + 1;
@@ -375,15 +375,6 @@ split
 	bool next = false;
 	switch ((int)vars.split)
 	{
-		case -1:
-			while (++vars.split < vars.splitNames.Length)
-				if (settings[vars.splitNames[vars.split]])
-				{
-					if (vars.split != 0)
-						vars.Log("-Skipped to " + vars.splitNames[vars.split] + " ("+ vars.split +")");
-					break;
-				}
-			break;
 		case 0: //Crash
 			next = vars.AtPosition(current, vars.positions[0]);
 			break;
