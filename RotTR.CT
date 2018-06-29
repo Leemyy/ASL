@@ -14,12 +14,12 @@
       <Address>"ROTTR.exe" 0x22D83D8</Address>
     </CheatEntry>
     <CheatEntry>
-      <ID>39</ID>
+      <ID>67</ID>
       <Description>"Loading"</Description>
       <VariableType>Byte</VariableType>
-      <Address>"ROTTR.exe" 0x2D27948</Address>
+      <Address>"ROTTR.exe"+02CCD940</Address>
       <Offsets>
-        <Offset>4C</Offset>
+        <Offset>C8</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
@@ -128,6 +128,15 @@
       </Offsets>
     </CheatEntry>
     <CheatEntry>
+      <ID>68</ID>
+      <Description>"Loading Alt"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"ROTTR.exe"+022D7918</Address>
+      <Offsets>
+        <Offset>E8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
       <ID>51</ID>
       <Description>""</Description>
       <VariableType>Byte</VariableType>
@@ -138,6 +147,15 @@
       <Description>"Base"</Description>
       <VariableType>Byte</VariableType>
       <Address>"ROTTR.exe" 0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>39</ID>
+      <Description>"Loading Old"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>"ROTTR.exe" 0x2D27948</Address>
+      <Offsets>
+        <Offset>4C</Offset>
+      </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>9</ID>

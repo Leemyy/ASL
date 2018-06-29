@@ -9,7 +9,7 @@ state("ROTTR")
 	bool LegacyFMV		: 0xF9A990;
 	int  Cutscene		: 0x1A22014;
 	bool FMV			: 0x22D83D8;
-	bool Loading		: 0xF9A990;
+	bool Loading		: 0x2CCD940, 0xC8;
 	long Alive			: 0x2CF3578; //counts up at about 1000000 per second
 	float Percentage	: 0x1A21EE8, 0xC38;
 	uint PlayTime		: 0x22D4690, 0x144;
