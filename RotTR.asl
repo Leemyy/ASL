@@ -123,9 +123,9 @@ startup
 		(dynamic state, int[] pos) =>
 	{
 		return
-			state.XI == pos[0] &&
-			state.YI == pos[1] &&
-			state.ZI == pos[2];
+			Math.Abs(state.XI - pos[0]) < 64 &&
+			Math.Abs(state.YI - pos[1]) < 64 &&
+			Math.Abs(state.ZI - pos[2]) < 64;
 	};
 	vars.AtPosition = AtPosition;
 
