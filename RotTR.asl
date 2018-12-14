@@ -3,7 +3,24 @@
  * AutoSplitter by Atorizil and Leemyy.
  */
 
-state("ROTTR")
+state("ROTTR", "820.0")
+{
+	int Cutscene : 0x1A0D094;
+	bool Loading : 0xF85AB0;
+	long Alive : 0x2CDE5E8;
+	float Percentage : 0xF866C8;
+	uint PlayTime : 0x22BF710, 0x144;
+	int XP : 0x2CDF1F0, 0x30, 0x280, 0x18, 0x38;
+	float X : 0x2CDA6A0;
+	float Y : 0x2CDA6A4;
+	float Z : 0x2CDA6A8;
+	int XI : 0x2CDA6A0;
+	int YI : 0x2CDA6A4;
+	int ZI : 0x2CDA6A8;
+	string50 Area : 0x2CDE661;
+}
+
+state("ROTTR", "813.4")
 {
 	bool LegacyLoading	: 0xF25FB8;
 	bool LegacyFMV		: 0xF9A990;
@@ -20,6 +37,7 @@ state("ROTTR")
 	int XI				: 0x15F6730;
 	int YI				: 0x15F6734;
 	int ZI				: 0x15F6738;
+	string50 Area : 0x2CF35F1;
 }
 
 
@@ -71,23 +89,23 @@ startup
 	int[][] positions =
 	{
 		//Crash
-		new int[]{-962197842, -1003503816, 1175886473}, 
+		new int[]{-962197842, -1003503816, 1175886473},
 		//Scorpions
-		new int[]{1176577054, -981459521, 1157857655}, 
+		new int[]{1176577054, -981459521, 1157857655},
 		//Escape
-		new int[]{1191227945, 1169654534, 1184398426}, 
+		new int[]{1191227945, 1169654534, 1184398426},
 		//Copper Mill
-		new int[]{1193006009, -971192708, 1186625091}, 
+		new int[]{1193006009, -971192708, 1186625091},
 		//Collapse
-		new int[]{1195235988, -959902118, 1185918591}, 
+		new int[]{1195235988, -959902118, 1185918591},
 		//Mines
-		new int[]{1196022701, -954315099, 1186755061}, 
+		new int[]{1196022701, -954315099, 1186755061},
 		//Ridgeline
-		new int[]{1198124255, -955189483, 1187744754}, 
+		new int[]{1198124255, -955189483, 1187744754},
 		//Trebuchet Skip
-		new int[]{1193649042, -961871283, 1169293195}, 
+		new int[]{1193649042, -961871283, 1169293195},
 		//End
-		new int[]{-1013344957, -1015526939, -1004660831}, 
+		new int[]{-1013344957, -1015526939, -1004660831},
 		//Mines 2
 		new int[]{-982394933, -980081238, 1147204534}
 	};
@@ -96,11 +114,11 @@ startup
 	float[][] ranges =
 	{
 		//Pistol
-		new float[]{23716.5488f, -3189.26807f, 19415.1777f}, 
+		new float[]{23716.5488f, -3189.26807f, 19415.1777f},
 		//Before Terrible Fight
-		new float[]{14144.0039f, 14813.75f, -610.483032f}, 
+		new float[]{14144.0039f, 14813.75f, -610.483032f},
 		//Final Fight
-		new float[]{44770.3242f, -9297.67871f, 17161.8359f}, 
+		new float[]{44770.3242f, -9297.67871f, 17161.8359f},
 		//Chopper Crash
 		new float[]{46325.2031f, -8353.1377f, 15349.1055f},
 		//Scorpions
@@ -170,7 +188,7 @@ startup
 	settings.Add("logXP", true, "Experience", "debug");
 
 	settings.Add("autopause", true, "Pause timer when game crashes");
-	
+
 	settings.Add("Splits");
 	settings.CurrentDefaultParent = "Splits";
 	settings.Add(splitNames[ 0], false, "Intro OOB");
@@ -234,6 +252,19 @@ shutdown
 
 init
 {
+	// This (v) would normally be a switch but for now whilst we can't
+	// get on 813.4 this will do
+	// so if it is not the latest patch it will think you're on 813.4
+	// obviously that isn't ideal so it'll be fixed... at some point
+	if(modules.First().ModuleMemorySize == 296157184)
+	{
+		version = "820.0";
+	}
+	else
+	{
+		version = "813.4"
+	}
+
 	timer.IsGameTimePaused = false;
 
 	Action<string> Log =
@@ -258,6 +289,7 @@ exit
 
 update
 {
+	// print(modules.First().ModuleMemorySize.ToString());
 	if (settings["autopause"])
 	{
 		bool prev = vars.crashTime;
@@ -293,20 +325,43 @@ update
 
 start
 {
-	if (current.PlayTime == 0 && current.FMV && current.Loading
-		&& current.Cutscene == 0 && current.Percentage > 0.5f
-		&& current.X == 0 && current.Y == 0 && current.Z == 0)
+	if(version == "813.4")
 	{
-		return true;
+		if (current.PlayTime == 0 && current.FMV && current.Loading
+			&& current.Cutscene == 0 && current.Percentage > 0.5f
+			&& current.X == 0 && current.Y == 0 && current.Z == 0)
+		{
+			return true;
+		}
+		return false;
 	}
-	return false;
+	if(version == "820.0")
+	{
+		if(current.PlayTime == 0 && current.Loading && current.Cutscene == 0
+		 	&& current.Percentage > 0.5f && current.X == 0 && current.Y == 0
+			&& current.Z == 0 && current.Area == "av_000_walk_talk")
+			{
+				return true;
+			}
+			return false;
+	}
 }
 
 isLoading
 {
-	return current.Cutscene != 0 || current.LegacyLoading || current.LegacyFMV
-	|| current.FMV || current.Loading
-	|| current.Percentage < .1f || vars.crash || vars.crashTime;
+	if(version == "813.4")
+	{
+		return current.Cutscene != 0 || current.LegacyLoading
+		|| current.FMV || current.Loading
+		|| current.Percentage < .1f || vars.crash || vars.crashTime;
+		if(current.Area != "st_cistern")
+			return current.LegacyFMV;
+	}
+	if(version == "820.0")
+	{
+		return current.Cutscene != 0 || current.Loading
+		|| current.Percentage < .1f || vars.crash || vars.crashtime;
+	}
 }
 
 split
