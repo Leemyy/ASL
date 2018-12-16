@@ -262,7 +262,7 @@ init
 	}
 	else
 	{
-		version = "813.4"
+		version = "813.4";
 	}
 
 	timer.IsGameTimePaused = false;
