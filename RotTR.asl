@@ -3,25 +3,29 @@
  * AutoSplitter by Atorizil and Leemyy.
  */
 
-state("ROTTR", "820.0")
-{
+state("ROTTR", "820.0"){
+	// Most address' defined here is the same as 813.4
+	// LegacyLoading never went to 1 so I couldn't refind it
+	// I accidently found LegacyFMV so it may as well be used
+	// Loading was hard to refind so it would probably be the culprit is stuff goes wrong
+	bool LegacyFMV : 0xF85AB0;
 	int Cutscene : 0x1A0D094;
-	bool Loading : 0xF85AB0;
+	bool FMV : 0x22C345C;
+	bool Loading : 0x2D129A8, 0x4C;
 	long Alive : 0x2CDE5E8;
 	float Percentage : 0xF866C8;
 	uint PlayTime : 0x22BF710, 0x144;
 	int XP : 0x2CDF1F0, 0x30, 0x280, 0x18, 0x38;
-	float X : 0x2CDA6A0;
-	float Y : 0x2CDA6A4;
-	float Z : 0x2CDA6A8;
-	int XI : 0x2CDA6A0;
-	int YI : 0x2CDA6A4;
-	int ZI : 0x2CDA6A8;
+	float X : 0x15E1790;
+	float Y : 0x15E1794;
+	float Z : 0x15E1798;
+	int XI : 0x15E1790;
+	int YI : 0x15E1794;
+	int ZI : 0x15E1798;
 	string50 Area : 0x2CDE661;
 }
 
-state("ROTTR", "813.4")
-{
+state("ROTTR", "813.4"){
 	bool LegacyLoading	: 0xF25FB8;
 	bool LegacyFMV		: 0xF9A990;
 	int  Cutscene		: 0x1A22014;
@@ -40,9 +44,7 @@ state("ROTTR", "813.4")
 	string50 Area : 0x2CF35F1;
 }
 
-
-startup
-{
+startup{
 	vars.ticks = 0;
 	vars.unitValue = 50f / 451;
 	vars.split = -1;
@@ -244,27 +246,20 @@ startup
 	settings.CurrentDefaultParent = null;
 }
 
-shutdown
-{
+shutdown{
 	timer.OnStart -= vars.OnStart;
 }
 
-
-init
-{
-	// This (v) would normally be a switch but for now whilst we can't
-	// get on 813.4 this will do
-	// so if it is not the latest patch it will think you're on 813.4
-	// obviously that isn't ideal so it'll be fixed... at some point
-	if(modules.First().ModuleMemorySize == 296157184)
+init{
+	switch(modules.First().ModuleMemorySize)
 	{
-		version = "820.0";
+		case 296157184:
+			version = "820.0";
+			break;
+		case 137060352:
+			version = "813.4";
+			break;
 	}
-	else
-	{
-		version = "813.4"
-	}
-
 	timer.IsGameTimePaused = false;
 
 	Action<string> Log =
@@ -276,8 +271,7 @@ init
 	vars.Log = Log;
 }
 
-exit
-{
+exit{
 	timer.IsGameTimePaused = true;
 	if ((vars.crashTime || vars.crashPos) && settings["autopause"])
 	{
@@ -286,10 +280,8 @@ exit
 	}
 }
 
-
-update
-{
-	// print(modules.First().ModuleMemorySize.ToString());
+update{
+	//print(modules.First().ModuleMemorySize.ToString());
 	if (settings["autopause"])
 	{
 		bool prev = vars.crashTime;
@@ -323,49 +315,21 @@ update
 		vars.Log("XP +"+ deltaXP +" ("+ current.XP +")");
 }
 
-start
-{
-	if(version == "813.4")
-	{
-		if (current.PlayTime == 0 && current.FMV && current.Loading
-			&& current.Cutscene == 0 && current.Percentage > 0.5f
-			&& current.X == 0 && current.Y == 0 && current.Z == 0)
-		{
-			return true;
-		}
-		return false;
-	}
-	if(version == "820.0")
-	{
-		if(current.PlayTime == 0 && current.Loading && current.Cutscene == 0
-		 	&& current.Percentage > 0.5f && current.X == 0 && current.Y == 0
-			&& current.Z == 0 && current.Area == "av_000_walk_talk")
-			{
-				return true;
-			}
-			return false;
+start{
+	if(current.PlayTime == 0 && current.FMV && current.Loading && current.Cutscene == 0 && current.Percentage > 0.5f && current.X == 0 && current.Y == 0 && current.Z == 0 && current.Area == "av_000_walk_talk"){
+		return true;
 	}
 }
 
-isLoading
-{
-	if(version == "813.4")
-	{
-		return current.Cutscene != 0 || current.LegacyLoading
-		|| current.FMV || current.Loading
-		|| current.Percentage < .1f || vars.crash || vars.crashTime;
+isLoading{
+		return current.Cutscene != 0 || current.FMV || current.Loading || current.Percentage < .1f || vars.crash || vars.crashTime;
 		if(current.Area != "st_cistern")
 			return current.LegacyFMV;
-	}
-	if(version == "820.0")
-	{
-		return current.Cutscene != 0 || current.Loading
-		|| current.Percentage < .1f || vars.crash || vars.crashtime;
-	}
+		if(version == "813.4")
+			return current.LegacyLoading;
 }
 
-split
-{
+split{
 	//Prevent faulty splits when starting timer manually
 	if (vars.start)
 	{
