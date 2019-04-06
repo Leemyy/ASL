@@ -6,24 +6,25 @@ startup {
     settings.Add("DIALOGUE_Ending", true, "End");
     //BOSSES
     settings.Add("bosses", true, "Bosses");
-    settings.Add("Xedur", true, "Xedur", "bosses");
-    settings.Add("Telal", true, "Telal", "bosses");
-    settings.Add("Uruku", true, "Uruku", "bosses");
-    settings.Add("Gir-Tab", false, "Gir-Tab", "bosses");
-    settings.Add("Vision", true, "Vision", "bosses");
-    settings.Add("Clone", false, "Clone", "bosses");
-    settings.Add("Ukhu", true, "Ukhu", "bosses");
-    settings.Add("Sentinel", true, "Sentinel", "bosses");
-    settings.Add("Xedur Hul", false, "Xedur Hul", "bosses");
-    settings.Add("Athetos", true, "Athetos", "bosses");
     settings.Add("DIALOGUE_SecurityWormMeet", false, "Xedur (start)", "bosses");
+    settings.Add("Xedur", true, "Xedur (end)", "bosses");
     settings.Add("DIALOGUE_SoldierBossMeet", false, "Telal (start)", "bosses");
+    settings.Add("Telal", true, "Telal (end)", "bosses");
     settings.Add("DIALOGUE_SlugBossMeet", false, "Uruku (start)", "bosses");
+    settings.Add("Uruku", true, "Uruku (end)", "bosses");
     settings.Add("DIALOGUE_ScorpionBossMeet", false, "Gir-Tab (start)", "bosses");
+    settings.Add("Gir-Tab", false, "Gir-Tab (end)", "bosses");
     settings.Add("DIALOGUE_MantaBossMeet", false, "Vision (start)", "bosses");
+    settings.Add("Vision", true, "Vision (end)", "bosses");
     settings.Add("DIALOGUE_DeformedTraceReveal", false, "Clone (start)", "bosses");
+    settings.Add("Clone", false, "Clone (end)", "bosses");
     settings.Add("DIALOGUE_SpitBugBossMeet", false, "Ukhu (start)", "bosses");
+    settings.Add("Ukhu", true, "Ukhu (end)", "bosses");
+    settings.Add("Sentinel", true, "Sentinel (end)", "bosses");
     settings.Add("DIALOGUE_SecurityWormAdvancedMeet", false, "Xedur Hul (start)", "bosses");
+    settings.Add("Xedur Hul", false, "Xedur Hul (end)", "bosses");
+    settings.Add("DIALOGUE_AthetosMeet", false, "Athetos (start)", "bosses");
+    settings.Add("Athetos", true, "Athetos (end)", "bosses");
     //WEAPONS
     settings.Add("weapons", true, "Weapons");
     settings.Add("DataDisruptor", true, "Axiom Disruptor", "weapons");
