@@ -225,12 +225,13 @@ startup {
     EventHandler OnSplit =
         (s, e) =>
     {
-        print("->Split< ");
+        print("->Split<");
     };
     timer.OnSplit += OnSplit;
 }
 
 init {
+    print("V 0.1");
     bool steam = modules.Any(m => m.ModuleName == "steam_api.dll");
     print(game.ProcessName + " (" + (steam ? "Steam" : "Epic") + " version)");
 
@@ -272,8 +273,8 @@ init {
     vars.gameOffset = offset;
 
     DeepPointer dp;
-    dp = new DeepPointer(offset, 0xE0, 0xB0);
-    vars.cHP = new MemoryWatcher<int>(dp);
+    dp = new DeepPointer(offset, 0xE0, 0xB4);
+    vars.maxHealth = new MemoryWatcher<int>(dp);
     dp = new DeepPointer(offset, 0xE0, 0xC);
     vars.ticks = new MemoryWatcher<double>(dp);
     dp = new DeepPointer(vars.gameOffset, 0xE0, 0x48, 0xC);
@@ -285,7 +286,7 @@ init {
 }
 
 update {
-    vars.cHP.Update(game);
+    vars.maxHealth.Update(game);
     vars.ticks.Update(game);
     vars.checkpointCount.Update(game);
     vars.itemCount.Update(game);
@@ -298,7 +299,8 @@ gameTime {
 }
 
 start {
-    return vars.ticks.Current < 60 && vars.ticks.Current > 0;
+    return vars.ticks.Current < 60 && vars.ticks.Current > 1 &&
+    vars.itemCount.Current == 0 && vars.maxHealth == 200;
 }
 
 reset { 
