@@ -220,6 +220,7 @@ startup {
         vars.lastItem = 0;
         vars.lastKeyPoint = 0;
     };
+    vars.OnStart = OnStart;
     timer.OnStart += OnStart;
 
     EventHandler OnSplit =
@@ -227,7 +228,13 @@ startup {
     {
         print("->Split<");
     };
+    vars.OnSplit = OnSplit;
     timer.OnSplit += OnSplit;
+}
+
+shutdown{
+    timer.OnStart -= vars.OnStart;
+    timer.OnSplit -= vars.OnSplit;
 }
 
 init {
