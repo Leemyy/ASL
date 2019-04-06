@@ -231,7 +231,7 @@ startup {
 }
 
 init {
-    print("V 0.1");
+    print("v 0.2");
     bool steam = modules.Any(m => m.ModuleName == "steam_api.dll");
     print(game.ProcessName + " (" + (steam ? "Steam" : "Epic") + " version)");
 
@@ -312,7 +312,7 @@ split {
     {
         //print("Test Checkpoint: "+ vars.checkpointCount.Current.ToString() +" > "+ vars.lastCheckpoint.ToString());
         string checkpoint = vars.ReadCheckpoint(game, vars.lastCheckpoint);
-        if (string.IsNullOrEmpty(checkpoint) && settings.ContainsKey(checkpoint))
+        if (!string.IsNullOrEmpty(checkpoint) && settings.ContainsKey(checkpoint))
         {
             print("Checkpoint: " + checkpoint +" @"+ timer.CurrentTime.GameTime.ToString());
             vars.lastCheckpoint++;
@@ -324,7 +324,7 @@ split {
     {
         //print("Test Item "+ vars.itemCount.Current.ToString() +" > "+ vars.lastItem.ToString());
         string item = vars.ReadItem(game, vars.lastItem);
-        if (string.IsNullOrEmpty(item) && settings.ContainsKey(item))
+        if (!string.IsNullOrEmpty(item) && settings.ContainsKey(item))
         {
             print("Item: " + item +" @"+ timer.CurrentTime.GameTime.ToString());
             vars.lastItem++;
@@ -336,7 +336,7 @@ split {
     {
         //print("Test KeyPoint: "+ vars.keyPointCount.Current.ToString() +" > "+ vars.lastKeyPoint.ToString());
         string keyPoint = vars.ReadKeyPoint(game, vars.lastKeyPoint);
-        if (string.IsNullOrEmpty(keyPoint))
+        if (!string.IsNullOrEmpty(keyPoint))
         {
             print("KeyPoint: " + keyPoint +" @"+ timer.CurrentTime.GameTime.ToString());
             vars.lastKeyPoint++;
