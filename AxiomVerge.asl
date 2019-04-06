@@ -348,7 +348,7 @@ split {
     {
         //print("Test KeyPoint: "+ vars.keyPointCount.Current.ToString() +" > "+ vars.lastKeyPoint.ToString());
         string keyPoint = vars.ReadKeyPoint(game, vars.lastKeyPoint);
-        if (!string.IsNullOrEmpty(keyPoint))
+        if (!string.IsNullOrEmpty(keyPoint) && keyPoint != "Sentinel")
         {
             print("KeyPoint: " + keyPoint +" @"+ timer.CurrentTime.GameTime.ToString());
             vars.lastKeyPoint++;
