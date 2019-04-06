@@ -300,7 +300,7 @@ gameTime {
 
 start {
     return vars.ticks.Current < 60 && vars.ticks.Current > 1 &&
-    vars.itemCount.Current == 0 && vars.maxHealth == 200;
+    vars.itemCount.Current == 0;
 }
 
 reset { 
