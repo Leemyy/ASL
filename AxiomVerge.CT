@@ -1,0 +1,3746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="28">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>126</ID>
+      <Description>"Pattern"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>490</ID>
+          <Description>"?? ?? ?? ?? 04 00 00 00 00 00 00 00 00 00 00 00 ?? ?? ?? ?? F8 07 00 00"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>125</ID>
+          <Description>"?? ?? ?? ?? 04 00 00 00 00 00 00 00 00 00 00 00 34 EF ?? ?? F8 07 00 00 ?? 19 ?? ?? ?? 19 ?? ?? ?? 19"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>489</ID>
+          <Description>"?? ?? ?? ?? 04 00 00 00 00 00 00 00 00 00 00 00 34 EF ?? ?? F8 07 00 00 ?? 18 ?? ?? ?? 18 ?? ?? ?? 18"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>131</ID>
+      <Description>"mGame offsets"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>132</ID>
+          <Description>"Steam: 144"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>133</ID>
+          <Description>"Epic: B0"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>491</ID>
+          <Description>"Randomizer (Steam): 50"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>492</ID>
+          <Description>"Randomizer (Epic): 24"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"THGame"</Description>
+      <LastState Value="40 31 08 01 04 00 00 00 00 00 00 00 00 00 00 00 34 EF 30 58 F8 07 00 00 0C 19 A0 02 0C 19 A0 02 0C 19" RealAddress="03A03520"/>
+      <ShowAsHex>1</ShowAsHex>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>34</ByteLength>
+      <Address>03A03520</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>101</ID>
+          <Description>"mGame"</Description>
+          <LastState Value="010614E4" RealAddress="02A2A988"/>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B0</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>113</ID>
+              <Description>"mCurrentSave"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="010659AC" RealAddress="02B4B614"/>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+E0</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>32</ID>
+                  <Description>"mTotalFrames"</Description>
+                  <LastState Value="372805" RealAddress="02B4B618"/>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>69</ID>
+                  <Description>"mEffectiveFrames"</Description>
+                  <LastState Value="159055.286563467" RealAddress="02B4B620"/>
+                  <VariableType>Double</VariableType>
+                  <Address>+C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>60</ID>
+                  <Description>"mPlayerName"</Description>
+                  <LastState RealAddress="02B4BA50"/>
+                  <VariableType>String</VariableType>
+                  <Length>3</Length>
+                  <Unicode>1</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+14</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>61</ID>
+                  <Description>"mCurrentWeapon"</Description>
+                  <LastState RealAddress="02B4BA64"/>
+                  <VariableType>String</VariableType>
+                  <Length>20</Length>
+                  <Unicode>1</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+18</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>62</ID>
+                  <Description>"mPreviousWeapon"</Description>
+                  <VariableType>String</VariableType>
+                  <Length>20</Length>
+                  <Unicode>1</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+1C</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>63</ID>
+                  <Description>"mCurrentTool"</Description>
+                  <LastState RealAddress="02B4BA8C"/>
+                  <VariableType>String</VariableType>
+                  <Length>20</Length>
+                  <Unicode>1</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+20</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>64</ID>
+                  <Description>"mSaveArea"</Description>
+                  <LastState RealAddress="02B4BAA4"/>
+                  <VariableType>String</VariableType>
+                  <Length>20</Length>
+                  <Unicode>1</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+24</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>65</ID>
+                  <Description>"mSaveRoom"</Description>
+                  <LastState RealAddress="02B4BABC"/>
+                  <VariableType>String</VariableType>
+                  <Length>20</Length>
+                  <Unicode>1</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+28</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>70</ID>
+                  <Description>"mWeaponQuickSelect"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="1474764288" RealAddress="02B4B744"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+2C</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>102</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="10" RealAddress="02B4B750"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>71</ID>
+                      <Description>"Item0"</Description>
+                      <LastState RealAddress="02B4BB48"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>103</ID>
+                      <Description>"Item1"</Description>
+                      <LastState RealAddress="02B4BB70"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>104</ID>
+                      <Description>"Item2"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>105</ID>
+                      <Description>"Item3"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>14</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>106</ID>
+                      <Description>"Item4"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>18</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>107</ID>
+                      <Description>"Item5"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>1C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>108</ID>
+                      <Description>"Item6"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>20</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>109</ID>
+                      <Description>"Item7"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>24</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>110</ID>
+                      <Description>"Item8"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>28</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>111</ID>
+                      <Description>"Item9"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>2C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>81</ID>
+                  <Description>"mItems"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C143B24" RealAddress="02B4B75C"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+30</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>127</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="5" RealAddress="02B4B768"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>82</ID>
+                      <Description>"Item0"</Description>
+                      <LastState RealAddress="02B4BBEC"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>83</ID>
+                      <Description>"Item1"</Description>
+                      <LastState RealAddress="02B4BC2C"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>130</ID>
+                      <Description>"Item2"</Description>
+                      <LastState RealAddress="02B4BC84"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>86</ID>
+                  <Description>"mKeyPointsCompleted"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="57E71E00" RealAddress="02B4B774"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+34</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>128</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="14" RealAddress="02B4B780"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87</ID>
+                      <Description>"KeyPoint0"</Description>
+                      <LastState RealAddress="02B4BD58"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>40</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>114</ID>
+                      <Description>"KeyPoint1"</Description>
+                      <LastState RealAddress="02B4BD94"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>40</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>116</ID>
+                      <Description>"KeyPoint2"</Description>
+                      <LastState RealAddress="02B4BDE4"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>40</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>115</ID>
+                      <Description>"KeyPoint3"</Description>
+                      <LastState RealAddress="02B4BE10"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>40</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>14</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>91</ID>
+                  <Description>"mPasswords"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C143E78" RealAddress="02B4B78C"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+38</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>129</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="5" RealAddress="02B4B798"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>117</ID>
+                      <Description>"Password0"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>121</ID>
+                      <Description>"Password1"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>120</ID>
+                      <Description>"Password2"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>119</ID>
+                      <Description>"Password3"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>14</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>118</ID>
+                      <Description>"Password4"</Description>
+                      <LastState RealAddress="02A01230"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>4</Offset>
+                        <Offset>18</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>97</ID>
+                  <Description>"mAreaSaveData"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C1441CC" RealAddress="02B4B7A4"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+3c</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>140</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="9" RealAddress="02B4B7B0"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>98</ID>
+                      <Description>"Area1"</Description>
+                      <LastState Value="16" RealAddress="02B4C2D4"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>123</ID>
+                      <Description>"Area2"</Description>
+                      <LastState Value="25" RealAddress="02B4C6D4"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>122</ID>
+                      <Description>"Area3"</Description>
+                      <LastState Value="0" RealAddress="02B4C9A8"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>139</ID>
+                      <Description>"Area4"</Description>
+                      <LastState Value="0" RealAddress="02B4CA08"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>14</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>138</ID>
+                      <Description>"Area5"</Description>
+                      <LastState Value="0" RealAddress="02B4CA68"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>18</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>137</ID>
+                      <Description>"Area6"</Description>
+                      <LastState Value="0" RealAddress="02B4CAC8"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>1C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>136</ID>
+                      <Description>"Area7"</Description>
+                      <LastState Value="0" RealAddress="02B4CB28"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>20</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>135</ID>
+                      <Description>"Area8"</Description>
+                      <LastState Value="0" RealAddress="02B4CB88"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>24</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>134</ID>
+                      <Description>"Area9"</Description>
+                      <LastState Value="0" RealAddress="02B4CBE8"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>14</Offset>
+                        <Offset>8</Offset>
+                        <Offset>28</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>141</ID>
+                  <Description>"mSecretWorldSaveData"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C144520" RealAddress="02B4B7BC"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+40</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>142</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="5" RealAddress="02B4B7C8"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>143</ID>
+                      <Description>"Secret1"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0FF8F4" RealAddress="02B4CCE8"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>148</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4CD08"/>
+                          <VariableType>String</VariableType>
+                          <Length>10</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>149</ID>
+                          <Description>"mSecretWorldName"</Description>
+                          <LastState RealAddress="02B4CD20"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>150</ID>
+                          <Description>"mPrimaryItem"</Description>
+                          <LastState RealAddress="02B4CD50"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>151</ID>
+                          <Description>"mSecondaryItem"</Description>
+                          <LastState RealAddress="02B4CD80"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>152</ID>
+                      <Description>"Secret2"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0FF8F4" RealAddress="02B4CDC4"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>153</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4CDE4"/>
+                          <VariableType>String</VariableType>
+                          <Length>10</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>154</ID>
+                          <Description>"mSecretWorldName"</Description>
+                          <LastState RealAddress="02B4CDFC"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>155</ID>
+                          <Description>"mPrimaryItem"</Description>
+                          <LastState RealAddress="02B4CE2C"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>156</ID>
+                          <Description>"mSecondaryItem"</Description>
+                          <LastState RealAddress="02B4CE58"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>167</ID>
+                      <Description>"Secret3"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0FF8F4" RealAddress="02B4CE90"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>168</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4CEB0"/>
+                          <VariableType>String</VariableType>
+                          <Length>10</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>169</ID>
+                          <Description>"mSecretWorldName"</Description>
+                          <LastState RealAddress="02B4CEC8"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>170</ID>
+                          <Description>"mPrimaryItem"</Description>
+                          <LastState RealAddress="02B4CEF8"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>171</ID>
+                          <Description>"mSecondaryItem"</Description>
+                          <LastState RealAddress="02B4CF28"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>162</ID>
+                      <Description>"Secret4"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0FF8F4" RealAddress="02B4CF60"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>14</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>163</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4CF80"/>
+                          <VariableType>String</VariableType>
+                          <Length>10</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>164</ID>
+                          <Description>"mSecretWorldName"</Description>
+                          <LastState RealAddress="02B4CF98"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>165</ID>
+                          <Description>"mPrimaryItem"</Description>
+                          <LastState RealAddress="02B4CFC8"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>166</ID>
+                          <Description>"mSecondaryItem"</Description>
+                          <LastState RealAddress="02B4CFF4"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>157</ID>
+                      <Description>"Secret5"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0FF8F4" RealAddress="02B4D02C"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>18</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>158</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4D04C"/>
+                          <VariableType>String</VariableType>
+                          <Length>10</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>159</ID>
+                          <Description>"mSecretWorldName"</Description>
+                          <LastState RealAddress="02B4D064"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>160</ID>
+                          <Description>"mPrimaryItem"</Description>
+                          <LastState RealAddress="02B4D094"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>161</ID>
+                          <Description>"mSecondaryItem"</Description>
+                          <LastState RealAddress="02B4D0B8"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>172</ID>
+                  <Description>"mAutoMaps"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C144874" RealAddress="02B4BA24"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+44</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>173</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="3" RealAddress="02B4BA30"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>174</ID>
+                      <Description>"Map0"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0F8D00" RealAddress="02B4D1FC"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>175</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4D2C4"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>176</ID>
+                          <Description>"mCSVData"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>189</ID>
+                          <Description>"mWidthScreens"</Description>
+                          <LastState Value="19" RealAddress="02B4D21C"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>190</ID>
+                          <Description>"mHeightScreens"</Description>
+                          <LastState Value="19" RealAddress="02B4D220"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>191</ID>
+                          <Description>"mScreenCount"</Description>
+                          <LastState Value="40" RealAddress="02B4D224"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>198</ID>
+                      <Description>"Map1"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0F8D00" RealAddress="02B4DAFC"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>199</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4DBA0"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>200</ID>
+                          <Description>"mCSVData"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>201</ID>
+                          <Description>"mWidthScreens"</Description>
+                          <LastState Value="12" RealAddress="02B4DB1C"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>202</ID>
+                          <Description>"mHeightScreens"</Description>
+                          <LastState Value="8" RealAddress="02B4DB20"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>203</ID>
+                          <Description>"mScreenCount"</Description>
+                          <LastState Value="0" RealAddress="02B4DB24"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>192</ID>
+                      <Description>"Map2"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0F8D00" RealAddress="02B4DBF4"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>193</ID>
+                          <Description>"mAreaName"</Description>
+                          <LastState RealAddress="02B4DC8C"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>194</ID>
+                          <Description>"mCSVData"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>195</ID>
+                          <Description>"mWidthScreens"</Description>
+                          <LastState Value="25" RealAddress="02B4DC14"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>196</ID>
+                          <Description>"mHeightScreens"</Description>
+                          <LastState Value="16" RealAddress="02B4DC18"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>197</ID>
+                          <Description>"mScreenCount"</Description>
+                          <LastState Value="4" RealAddress="02B4DC1C"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+28</Address>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>204</ID>
+                  <Description>"mSpeedrunCheckpoints"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C145B18" RealAddress="02B4B7D4"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+48</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>205</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="1" RealAddress="02B4B7E0"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>206</ID>
+                      <Description>"Checkpoint0"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C0FFA0C" RealAddress="02B4DDCC"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>207</ID>
+                          <Description>"mFrames"</Description>
+                          <LastState Value="65975" RealAddress="02B4DDD0"/>
+                          <VariableType>8 Bytes</VariableType>
+                          <Address>+4</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>208</ID>
+                          <Description>"mName"</Description>
+                          <LastState RealAddress="02B4DDE8"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>212</ID>
+                      <Description>"Checkpoint1"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>224</ID>
+                          <Description>"mFrames"</Description>
+                          <VariableType>8 Bytes</VariableType>
+                          <Address>+4</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>225</ID>
+                          <Description>"mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>218</ID>
+                      <Description>"Checkpoint2"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>226</ID>
+                          <Description>"mFrames"</Description>
+                          <VariableType>8 Bytes</VariableType>
+                          <Address>+4</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>227</ID>
+                          <Description>"mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>228</ID>
+                  <Description>"mCreaturesGlitched"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="1474764288" RealAddress="02B4B7EC"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4C</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>229</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="0" RealAddress="02B4B7F8"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>230</ID>
+                      <Description>"Item0"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>231</ID>
+                      <Description>"Item1"</Description>
+                      <LastState RealAddress="5830EB48"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>232</ID>
+                      <Description>"Item2"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>233</ID>
+                      <Description>"Item3"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>14</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>234</ID>
+                      <Description>"Item4"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>18</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>235</ID>
+                      <Description>"Item5"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>1C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>236</ID>
+                      <Description>"Item6"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>20</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>237</ID>
+                      <Description>"Item7"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>24</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>238</ID>
+                      <Description>"Item8"</Description>
+                      <LastState RealAddress="5830EB48"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>28</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>239</ID>
+                      <Description>"Item9"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>2C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>306</ID>
+                  <Description>"mWeaponData"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C147E9C" RealAddress="02B4B924"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+68</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>307</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="2" RealAddress="02B4B930"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>308</ID>
+                      <Description>"Weapon0"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C10ED34" RealAddress="02B2A08C"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>309</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <LastState RealAddress="02B2A0F0"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>310</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <LastState RealAddress="02B2A118"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>326</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <LastState RealAddress="02B2A14C"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>327</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>311</ID>
+                          <Description>"mValue"</Description>
+                          <LastState Value="0" RealAddress="02B2A0A0"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>329</ID>
+                          <Description>"mScale"</Description>
+                          <LastState Value="1" RealAddress="02B2A0A4"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>328</ID>
+                          <Description>"mPulseVal"</Description>
+                          <LastState Value="1" RealAddress="02B2A0A8"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>312</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <LastState Value="0" RealAddress="02B2A0AC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>330</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <LastState Value="3F800000" RealAddress="02B2A0B0"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>331</ID>
+                              <Description>"X"</Description>
+                              <LastState Value="1" RealAddress="02B2A0B0"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>332</ID>
+                              <Description>"Y"</Description>
+                              <LastState Value="1" RealAddress="02B2A0B4"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>334</ID>
+                              <Description>"Z"</Description>
+                              <LastState Value="1" RealAddress="02B2A0B8"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>333</ID>
+                              <Description>"W"</Description>
+                              <LastState Value="1" RealAddress="02B2A0BC"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>349</ID>
+                      <Description>"Weapon1"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C10ED34" RealAddress="02B2ACCC"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>350</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <LastState RealAddress="02B2AD30"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>351</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>352</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <LastState RealAddress="02B2AD70"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>353</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>354</ID>
+                          <Description>"mValue"</Description>
+                          <LastState Value="0" RealAddress="02B2ACE0"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>355</ID>
+                          <Description>"mScale"</Description>
+                          <LastState Value="1" RealAddress="02B2ACE4"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>356</ID>
+                          <Description>"mPulseVal"</Description>
+                          <LastState Value="1" RealAddress="02B2ACE8"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>357</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <LastState Value="0" RealAddress="02B2ACEC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>358</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <LastState Value="3F800000" RealAddress="02B2ACF0"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>359</ID>
+                              <Description>"X"</Description>
+                              <LastState Value="1" RealAddress="02B2ACF0"/>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>360</ID>
+                              <Description>"Y"</Description>
+                              <LastState Value="1" RealAddress="02B2ACF4"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>361</ID>
+                              <Description>"Z"</Description>
+                              <LastState Value="1" RealAddress="02B2ACF8"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>362</ID>
+                              <Description>"W"</Description>
+                              <LastState Value="1" RealAddress="02B2ACFC"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>335</ID>
+                      <Description>"Weapon2"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>336</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>337</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>338</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>339</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>340</ID>
+                          <Description>"mValue"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>341</ID>
+                          <Description>"mScale"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>342</ID>
+                          <Description>"mPulseVal"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>343</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>344</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>345</ID>
+                              <Description>"X"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>346</ID>
+                              <Description>"Y"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>347</ID>
+                              <Description>"Z"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>348</ID>
+                              <Description>"W"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>286</ID>
+                  <Description>"mToolData"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C147E9C" RealAddress="02B4B93C"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+6C</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>287</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="1" RealAddress="02B4B948"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>363</ID>
+                      <Description>"Tool0"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C10ED34" RealAddress="02B2A2CC"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>364</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <LastState RealAddress="02B2A324"/>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>365</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>366</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <LastState RealAddress="02B2A354"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>367</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>368</ID>
+                          <Description>"mValue"</Description>
+                          <LastState Value="0" RealAddress="02B2A2E0"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>369</ID>
+                          <Description>"mScale"</Description>
+                          <LastState Value="1" RealAddress="02B2A2E4"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>370</ID>
+                          <Description>"mPulseVal"</Description>
+                          <LastState Value="1" RealAddress="02B2A2E8"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>371</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <LastState Value="0" RealAddress="02B2A2EC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>372</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <LastState Value="3F800000" RealAddress="02B2A2F0"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>373</ID>
+                              <Description>"X"</Description>
+                              <LastState Value="1" RealAddress="02B2A2F0"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>374</ID>
+                              <Description>"Y"</Description>
+                              <LastState Value="1" RealAddress="02B2A2F4"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>375</ID>
+                              <Description>"Z"</Description>
+                              <LastState Value="1" RealAddress="02B2A2F8"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>376</ID>
+                              <Description>"W"</Description>
+                              <LastState Value="1" RealAddress="02B2A2FC"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>377</ID>
+                      <Description>"Tool1"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>378</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>379</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>380</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>381</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>382</ID>
+                          <Description>"mValue"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>383</ID>
+                          <Description>"mScale"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>384</ID>
+                          <Description>"mPulseVal"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>385</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>386</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>387</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>388</ID>
+                              <Description>"Y"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>389</ID>
+                              <Description>"Z"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>390</ID>
+                              <Description>"W"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>391</ID>
+                      <Description>"Tool2"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>392</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>393</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>394</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>395</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>396</ID>
+                          <Description>"mValue"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>397</ID>
+                          <Description>"mScale"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>398</ID>
+                          <Description>"mPulseVal"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>399</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>400</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>401</ID>
+                              <Description>"X"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>402</ID>
+                              <Description>"Y"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>403</ID>
+                              <Description>"Z"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>404</ID>
+                              <Description>"W"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>266</ID>
+                  <Description>"mUpgradeData"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C147E9C" RealAddress="02B4B954"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+70</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>267</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="0" RealAddress="02B4B960"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>405</ID>
+                      <Description>"Upgrade0"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>406</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>407</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>408</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>409</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>410</ID>
+                          <Description>"mValue"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>411</ID>
+                          <Description>"mScale"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>412</ID>
+                          <Description>"mPulseVal"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>413</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>414</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>415</ID>
+                              <Description>"X"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>416</ID>
+                              <Description>"Y"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>417</ID>
+                              <Description>"Z"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>418</ID>
+                              <Description>"W"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>419</ID>
+                      <Description>"Upgrade1"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="01400214" RealAddress="0C147E9C"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>420</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>421</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>422</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>423</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <LastState RealAddress="5830EEE8"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>424</ID>
+                          <Description>"mValue"</Description>
+                          <LastState Value="2.132884443E-38" RealAddress="0C147EB0"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>425</ID>
+                          <Description>"mScale"</Description>
+                          <LastState Value="1.143996745E-31" RealAddress="0C147EB4"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>426</ID>
+                          <Description>"mPulseVal"</Description>
+                          <LastState Value="7.799350567E14" RealAddress="0C147EB8"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>427</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <LastState Value="202669836" RealAddress="0C147EBC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>428</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <LastState Value="0C147EE8" RealAddress="0C147EC0"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>429</ID>
+                              <Description>"X"</Description>
+                              <LastState Value="1.143969473E-31" RealAddress="0C147EC0"/>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>430</ID>
+                              <Description>"Y"</Description>
+                              <LastState Value="1.143982639E-31" RealAddress="0C147EC4"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>431</ID>
+                              <Description>"Z"</Description>
+                              <LastState Value="1.1439864E-31" RealAddress="0C147EC8"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>432</ID>
+                              <Description>"W"</Description>
+                              <LastState Value="1.143990162E-31" RealAddress="0C147ECC"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>433</ID>
+                      <Description>"Upgrade2"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C1481C8" RealAddress="02AABAD4"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>434</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>435</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>436</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <LastState RealAddress="0C147EA4"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>437</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <LastState RealAddress="02AABADC"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>438</ID>
+                          <Description>"mValue"</Description>
+                          <LastState Value="0" RealAddress="02AABAE8"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>439</ID>
+                          <Description>"mScale"</Description>
+                          <LastState Value="0" RealAddress="02AABAEC"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>440</ID>
+                          <Description>"mPulseVal"</Description>
+                          <LastState Value="1.401298464E-45" RealAddress="02AABAF0"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>441</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <LastState Value="0" RealAddress="02AABAF4"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>442</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <LastState Value="0C147E9C" RealAddress="02AABAF8"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>443</ID>
+                              <Description>"X"</Description>
+                              <LastState Value="1.143960539E-31" RealAddress="02AABAF8"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>444</ID>
+                              <Description>"Y"</Description>
+                              <LastState Value="2.508648904E-37" RealAddress="02AABAFC"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>445</ID>
+                              <Description>"Z"</Description>
+                              <LastState Value="0" RealAddress="02AABB00"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>446</ID>
+                              <Description>"W"</Description>
+                              <LastState Value="0" RealAddress="02AABB04"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>246</ID>
+                  <Description>"mLoreData"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="0C147E9C" RealAddress="02B4B96C"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+74</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>247</ID>
+                      <Description>"Count"</Description>
+                      <LastState Value="0" RealAddress="02B4B978"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>447</ID>
+                      <Description>"Lore0"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>448</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>449</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>450</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>451</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>452</ID>
+                          <Description>"mValue"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>453</ID>
+                          <Description>"mScale"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>454</ID>
+                          <Description>"mPulseVal"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>455</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>456</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>457</ID>
+                              <Description>"X"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>458</ID>
+                              <Description>"Y"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>459</ID>
+                              <Description>"Z"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>460</ID>
+                              <Description>"W"</Description>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>461</ID>
+                      <Description>"Lore1"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="01400214" RealAddress="0C147E9C"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>C</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>462</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>463</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>464</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>465</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <LastState RealAddress="5830EEE8"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>466</ID>
+                          <Description>"mValue"</Description>
+                          <LastState Value="2.132884443E-38" RealAddress="0C147EB0"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>467</ID>
+                          <Description>"mScale"</Description>
+                          <LastState Value="1.143996745E-31" RealAddress="0C147EB4"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>468</ID>
+                          <Description>"mPulseVal"</Description>
+                          <LastState Value="7.799350567E14" RealAddress="0C147EB8"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>469</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <LastState Value="202669836" RealAddress="0C147EBC"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>470</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <LastState Value="0C147EE8" RealAddress="0C147EC0"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>471</ID>
+                              <Description>"X"</Description>
+                              <LastState Value="1.143969473E-31" RealAddress="0C147EC0"/>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>472</ID>
+                              <Description>"Y"</Description>
+                              <LastState Value="1.143982639E-31" RealAddress="0C147EC4"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>473</ID>
+                              <Description>"Z"</Description>
+                              <LastState Value="1.1439864E-31" RealAddress="0C147EC8"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>474</ID>
+                              <Description>"W"</Description>
+                              <LastState Value="1.143990162E-31" RealAddress="0C147ECC"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>475</ID>
+                      <Description>"Lore2"</Description>
+                      <Options moManualExpandCollapse="1"/>
+                      <LastState Value="0C1481C8" RealAddress="02AABAD4"/>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>10</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>476</ID>
+                          <Description>"mItemRecord.mName"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>20</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+4</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>477</ID>
+                          <Description>"mPickupAnimation"</Description>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+8</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>478</ID>
+                          <Description>"mIconAnimation"</Description>
+                          <LastState RealAddress="0C147EA4"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>479</ID>
+                          <Description>"mAcquireExplosion"</Description>
+                          <LastState RealAddress="02AABADC"/>
+                          <VariableType>String</VariableType>
+                          <Length>30</Length>
+                          <Unicode>1</Unicode>
+                          <CodePage>0</CodePage>
+                          <ZeroTerminate>1</ZeroTerminate>
+                          <Address>+10</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>480</ID>
+                          <Description>"mValue"</Description>
+                          <LastState Value="0" RealAddress="02AABAE8"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+14</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>481</ID>
+                          <Description>"mScale"</Description>
+                          <LastState Value="0" RealAddress="02AABAEC"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+18</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>482</ID>
+                          <Description>"mPulseVal"</Description>
+                          <LastState Value="1.401298464E-45" RealAddress="02AABAF0"/>
+                          <VariableType>Float</VariableType>
+                          <Address>+1C</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>483</ID>
+                          <Description>"mItemLanguage"</Description>
+                          <LastState Value="0" RealAddress="02AABAF4"/>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+20</Address>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>484</ID>
+                          <Description>"mTint"</Description>
+                          <Options moManualExpandCollapse="1"/>
+                          <LastState Value="0C147E9C" RealAddress="02AABAF8"/>
+                          <ShowAsHex>1</ShowAsHex>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>+24</Address>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>485</ID>
+                              <Description>"X"</Description>
+                              <LastState Value="1.143960539E-31" RealAddress="02AABAF8"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+0</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>486</ID>
+                              <Description>"Y"</Description>
+                              <LastState Value="2.508648904E-37" RealAddress="02AABAFC"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+4</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>487</ID>
+                              <Description>"Z"</Description>
+                              <LastState Value="0" RealAddress="02AABB00"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+8</Address>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>488</ID>
+                              <Description>"W"</Description>
+                              <LastState Value="0" RealAddress="02AABB04"/>
+                              <VariableType>Float</VariableType>
+                              <Address>+C</Address>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>240</ID>
+                  <Description>"mCurrentAutoMap"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <LastState Value="02B4DBF4" RealAddress="02B4B68C"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+78</Address>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>241</ID>
+                      <Description>"mAreaName"</Description>
+                      <LastState RealAddress="02BE7FA8"/>
+                      <VariableType>String</VariableType>
+                      <Length>20</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+4</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>242</ID>
+                      <Description>"mCSVData"</Description>
+                      <LastState RealAddress="02B4B98C"/>
+                      <VariableType>String</VariableType>
+                      <Length>30</Length>
+                      <Unicode>1</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>+8</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>243</ID>
+                      <Description>"mWidthScreens"</Description>
+                      <LastState Value="2" RealAddress="02B4B6AC"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+20</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>244</ID>
+                      <Description>"mHeightScreens"</Description>
+                      <LastState Value="95" RealAddress="02B4B6B0"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+24</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>245</ID>
+                      <Description>"mScreenCount"</Description>
+                      <LastState Value="37" RealAddress="02B4B6B4"/>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>+28</Address>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>66</ID>
+                  <Description>"mCurrentAutoMapName"</Description>
+                  <LastState RealAddress="02BE7FA8"/>
+                  <VariableType>String</VariableType>
+                  <Length>20</Length>
+                  <Unicode>1</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+7C</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>44</ID>
+                  <Description>"mScreenSize"</Description>
+                  <LastState Value="4" RealAddress="02B4B69C"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+88</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>35</ID>
+                  <Description>"mDifficulty"</Description>
+                  <LastState Value="0" RealAddress="02B4B6A0"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+8C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>40</ID>
+                  <Description>"mScreenCount"</Description>
+                  <LastState Value="44" RealAddress="02B4B6A4"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+90</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>41</ID>
+                  <Description>"mTotalScreenCount"</Description>
+                  <LastState Value="982" RealAddress="02B4B6A8"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+94</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>34</ID>
+                  <Description>"mNumDeaths"</Description>
+                  <LastState Value="2" RealAddress="02B4B6AC"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+98</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>25</ID>
+                  <Description>"mRedGooDestroyed"</Description>
+                  <LastState Value="95" RealAddress="02B4B6B0"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+9C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>26</ID>
+                  <Description>"mBricksDestroyed"</Description>
+                  <LastState Value="37" RealAddress="02B4B6B4"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+A0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>38</ID>
+                  <Description>"mLastMapSubScreen"</Description>
+                  <LastState Value="0" RealAddress="02B4B6B8"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>46</ID>
+                  <Description>"mBaseSeed"</Description>
+                  <LastState Value="5A0FF472" RealAddress="02B4B6BC"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>29</ID>
+                  <Description>"mHallucinationAmount"</Description>
+                  <LastState Value="0" RealAddress="02B4B6C0"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>5</ID>
+                  <Description>"mHitPoints"</Description>
+                  <LastState Value="300" RealAddress="02B4B6C4"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+B0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7</ID>
+                  <Description>"mMaxHitPoints"</Description>
+                  <LastState Value="300" RealAddress="02B4B6C8"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+B4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>8</ID>
+                  <Description>"mGlitchBombs"</Description>
+                  <LastState Value="0" RealAddress="02B4B6CC"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+B8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>9</ID>
+                  <Description>"mMaxGlitchBombs"</Description>
+                  <LastState Value="0" RealAddress="02B4B6D0"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+BC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10</ID>
+                  <Description>"mNumPowerNodes"</Description>
+                  <LastState Value="1" RealAddress="02B4B6D4"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+C0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>11</ID>
+                  <Description>"mNumPowerNodeFragments"</Description>
+                  <LastState Value="0" RealAddress="02B4B6D8"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+C4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>12</ID>
+                  <Description>"mEffectivePowerNodes"</Description>
+                  <LastState Value="1" RealAddress="02B4B6DC"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+C8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>13</ID>
+                  <Description>"mNumSizeNodes"</Description>
+                  <LastState Value="0" RealAddress="02B4B6E0"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+CC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>14</ID>
+                  <Description>"mNumRangeNodes"</Description>
+                  <LastState Value="0" RealAddress="02B4B6E4"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+D0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>15</ID>
+                  <Description>"mNumHealthNodes"</Description>
+                  <LastState Value="1" RealAddress="02B4B6E8"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+D4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>16</ID>
+                  <Description>"mNumHealthNodeFragments"</Description>
+                  <LastState Value="0" RealAddress="02B4B6EC"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+D8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>17</ID>
+                  <Description>"mEffectiveHealthNodes"</Description>
+                  <LastState Value="1" RealAddress="02B4B6F0"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+DC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>18</ID>
+                  <Description>"mItemCount"</Description>
+                  <LastState Value="5" RealAddress="02B4B6F4"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+E0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>19</ID>
+                  <Description>"mWeaponCount"</Description>
+                  <LastState Value="2" RealAddress="02B4B6F8"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+E4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>20</ID>
+                  <Description>"mToolCount"</Description>
+                  <LastState Value="1" RealAddress="02B4B6FC"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+E8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>21</ID>
+                  <Description>"mAbilityCount"</Description>
+                  <LastState Value="0" RealAddress="02B4B700"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+EC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>22</ID>
+                  <Description>"mHealthCount"</Description>
+                  <LastState Value="1" RealAddress="02B4B704"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+F0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>23</ID>
+                  <Description>"mPowerCount"</Description>
+                  <LastState Value="1" RealAddress="02B4B708"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+F4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>24</ID>
+                  <Description>"mNoteCount"</Description>
+                  <LastState Value="0" RealAddress="02B4B70C"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+F8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>33</ID>
+                  <Description>"mDamageResistance"</Description>
+                  <LastState Value="1" RealAddress="02B4B710"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+FC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>54</ID>
+                  <Description>"mTraceJumpVelocity"</Description>
+                  <LastState Value="-6" RealAddress="02B4B714"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+100</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>55</ID>
+                  <Description>"mTraceGravity"</Description>
+                  <LastState Value="0.25" RealAddress="02B4B718"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+104</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>56</ID>
+                  <Description>"mTraceJumpReleaseGravity"</Description>
+                  <LastState Value="0.625" RealAddress="02B4B71C"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+108</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>57</ID>
+                  <Description>"mDroneJumpVelocity"</Description>
+                  <LastState Value="-6" RealAddress="02B4B720"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+10C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>58</ID>
+                  <Description>"mDroneGravity"</Description>
+                  <LastState Value="0.25" RealAddress="02B4B724"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+110</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>59</ID>
+                  <Description>"mDroneJumpReleaseGravity"</Description>
+                  <LastState Value="0.625" RealAddress="02B4B728"/>
+                  <VariableType>Float</VariableType>
+                  <Address>+114</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>42</ID>
+                  <Description>"mIsSpeedRun"</Description>
+                  <LastState Value="0" RealAddress="02B4B72C"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+118</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>43</ID>
+                  <Description>"mUseRealTimers"</Description>
+                  <LastState Value="0" RealAddress="02B4B72D"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+119</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>45</ID>
+                  <Description>"mBiofluxVisions"</Description>
+                  <LastState Value="0" RealAddress="02B4B72E"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+11A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>47</ID>
+                  <Description>"mTranslatePrimordial"</Description>
+                  <LastState Value="0" RealAddress="02B4B72F"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+11B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>48</ID>
+                  <Description>"mTranslateVykhya"</Description>
+                  <LastState Value="0" RealAddress="02B4B730"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+11C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>49</ID>
+                  <Description>"mJustinBailey"</Description>
+                  <LastState Value="0" RealAddress="02B4B731"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+11D</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>50</ID>
+                  <Description>"mHasDrone"</Description>
+                  <LastState Value="0" RealAddress="02B4B732"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+11E</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>52</ID>
+                  <Description>"mCheatsUsed"</Description>
+                  <LastState Value="0" RealAddress="02B4B733"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+11F</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>51</ID>
+                  <Description>"mInitialized"</Description>
+                  <LastState Value="1" RealAddress="02B4B734"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+120</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>53</ID>
+                  <Description>"mEnhancedLaunch"</Description>
+                  <LastState Value="0" RealAddress="02B4B735"/>
+                  <VariableType>Byte</VariableType>
+                  <Address>+121</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>124</ID>
+                  <Description>"mSaveRoomPos"</Description>
+                  <LastState Value="43880000" RealAddress="02B4B73C"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+128</Address>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>36</ID>
+                      <Description>"X"</Description>
+                      <LastState Value="272" RealAddress="02B4B73C"/>
+                      <VariableType>Float</VariableType>
+                      <Address>+0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>37</ID>
+                      <Description>"Y"</Description>
+                      <LastState Value="0" RealAddress="02B4B740"/>
+                      <VariableType>Float</VariableType>
+                      <Address>+4</Address>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
