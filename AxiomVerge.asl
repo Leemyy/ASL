@@ -196,11 +196,17 @@ startup {
         index *= 4;
         index += 0x8;
         var stringLen = new DeepPointer(vars.gameOffset, 0xE0, 0x34, 0x4, index, 0x4);
-        var len = stringLen.Deref<int>(proc);
-        var stringArr = new DeepPointer(vars.gameOffset, 0xE0, 0x34, 0x4, index, 0x8);
-        var bytes = stringArr.DerefBytes(proc, len * 2);
-        if (bytes == null)
+        int len;
+        if (!stringLen.Deref<int>(proc, out len) || len < 4 || len > 50)
+        {
             return null;
+        }
+        var stringArr = new DeepPointer(vars.gameOffset, 0xE0, 0x34, 0x4, index, 0x8);
+        byte[] bytes;
+        if (!stringArr.DerefBytes(proc, len * 2, out bytes))
+        {
+            return null;
+        }
         return System.Text.Encoding.Unicode.GetString(bytes);
     };
     vars.ReadKeyPoint = ReadKeyPoint;
@@ -215,6 +221,13 @@ startup {
         vars.lastKeyPoint = 0;
     };
     timer.OnStart += OnStart;
+
+    EventHandler OnSplit =
+        (s, e) =>
+    {
+        print("->Split< ");
+    };
+    timer.OnSplit += OnSplit;
 }
 
 init {
@@ -297,7 +310,7 @@ split {
     {
         //print("Test Checkpoint: "+ vars.checkpointCount.Current.ToString() +" > "+ vars.lastCheckpoint.ToString());
         string checkpoint = vars.ReadCheckpoint(game, vars.lastCheckpoint);
-        if (checkpoint != null)
+        if (string.IsNullOrEmpty(checkpoint) && settings.ContainsKey(checkpoint))
         {
             print("Checkpoint: " + checkpoint +" @"+ timer.CurrentTime.GameTime.ToString());
             vars.lastCheckpoint++;
@@ -309,7 +322,7 @@ split {
     {
         //print("Test Item "+ vars.itemCount.Current.ToString() +" > "+ vars.lastItem.ToString());
         string item = vars.ReadItem(game, vars.lastItem);
-        if (item != null)
+        if (string.IsNullOrEmpty(item) && settings.ContainsKey(item))
         {
             print("Item: " + item +" @"+ timer.CurrentTime.GameTime.ToString());
             vars.lastItem++;
@@ -321,7 +334,7 @@ split {
     {
         //print("Test KeyPoint: "+ vars.keyPointCount.Current.ToString() +" > "+ vars.lastKeyPoint.ToString());
         string keyPoint = vars.ReadKeyPoint(game, vars.lastKeyPoint);
-        if (keyPoint != null)
+        if (string.IsNullOrEmpty(keyPoint))
         {
             print("KeyPoint: " + keyPoint +" @"+ timer.CurrentTime.GameTime.ToString());
             vars.lastKeyPoint++;
