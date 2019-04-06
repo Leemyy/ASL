@@ -3,27 +3,30 @@ state("AxiomVerge") {}
 state("RandomAV") {}
 
 startup {
+    settings.Add("reset_death", false, "Reset on death");
+    settings.SetToolTip("reset_death", "Reset needs to be enabled for this setting to take effect.");
+
     settings.Add("DIALOGUE_Ending", true, "End");
     //BOSSES
     settings.Add("bosses", true, "Bosses");
-    settings.Add("DIALOGUE_SecurityWormMeet", false, "Xedur (start)", "bosses");
+    settings.Add("DIALOGUE_SecurityWormMeet", true, "Xedur (start)", "bosses");
     settings.Add("Xedur", true, "Xedur (end)", "bosses");
-    settings.Add("DIALOGUE_SoldierBossMeet", false, "Telal (start)", "bosses");
+    settings.Add("DIALOGUE_SoldierBossMeet", true, "Telal (start)", "bosses");
     settings.Add("Telal", true, "Telal (end)", "bosses");
-    settings.Add("DIALOGUE_SlugBossMeet", false, "Uruku (start)", "bosses");
+    settings.Add("DIALOGUE_SlugBossMeet", true, "Uruku (start)", "bosses");
     settings.Add("Uruku", true, "Uruku (end)", "bosses");
     settings.Add("DIALOGUE_ScorpionBossMeet", false, "Gir-Tab (start)", "bosses");
     settings.Add("Gir-Tab", false, "Gir-Tab (end)", "bosses");
-    settings.Add("DIALOGUE_MantaBossMeet", false, "Vision (start)", "bosses");
+    settings.Add("DIALOGUE_MantaBossMeet", true, "Vision (start)", "bosses");
     settings.Add("Vision", true, "Vision (end)", "bosses");
     settings.Add("DIALOGUE_DeformedTraceReveal", false, "Clone (start)", "bosses");
     settings.Add("Clone", false, "Clone (end)", "bosses");
-    settings.Add("DIALOGUE_SpitBugBossMeet", false, "Ukhu (start)", "bosses");
+    settings.Add("DIALOGUE_SpitBugBossMeet", true, "Ukhu (start)", "bosses");
     settings.Add("Ukhu", true, "Ukhu (end)", "bosses");
     settings.Add("Sentinel", true, "Sentinel (end)", "bosses");
     settings.Add("DIALOGUE_SecurityWormAdvancedMeet", false, "Xedur Hul (start)", "bosses");
     settings.Add("Xedur Hul", false, "Xedur Hul (end)", "bosses");
-    settings.Add("DIALOGUE_AthetosMeet", false, "Athetos (start)", "bosses");
+    settings.Add("DIALOGUE_AthetosMeet", true, "Athetos (start)", "bosses");
     settings.Add("Athetos", true, "Athetos (end)", "bosses");
     //WEAPONS
     settings.Add("weapons", true, "Weapons");
@@ -212,6 +215,7 @@ startup {
     vars.ReadKeyPoint = ReadKeyPoint;
     vars.lastKeyPoint = 0;
 
+    vars.reset = false;
     EventHandler OnStart =
         (s, e) =>
     {
@@ -219,6 +223,7 @@ startup {
         vars.lastCheckpoint = 0;
         vars.lastItem = 0;
         vars.lastKeyPoint = 0;
+        vars.reset = false;
     };
     vars.OnStart = OnStart;
     timer.OnStart += OnStart;
@@ -226,7 +231,7 @@ startup {
     EventHandler OnSplit =
         (s, e) =>
     {
-        print("->Split<");
+        print(">Split");
     };
     vars.OnSplit = OnSplit;
     timer.OnSplit += OnSplit;
@@ -238,7 +243,7 @@ shutdown{
 }
 
 init {
-    print("v 0.2");
+    print("v 0.3");
     bool steam = modules.Any(m => m.ModuleName == "steam_api.dll");
     print(game.ProcessName + " (" + (steam ? "Steam" : "Epic") + " version)");
 
@@ -311,7 +316,7 @@ start {
 }
 
 reset { 
-
+    return vars.reset;
 }
 
 split {
@@ -350,6 +355,10 @@ split {
             if (settings.ContainsKey(keyPoint))
             {
                 return settings[keyPoint];
+            }
+            else if(keyPoint == "FirstDeath" && settings["reset_death"])
+            {
+                vars.reset = true;
             }
         }
     }
