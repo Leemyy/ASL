@@ -268,24 +268,6 @@ init {
     vars.itemCount = new MemoryWatcher<int>(dp);
     dp = new DeepPointer(vars.gameOffset, 0xE0, 0x34, 0xC);
     vars.keyPointCount = new MemoryWatcher<int>(dp);
-
-    var type = timer.CurrentTime.GetType();
-    print(type.ToString());
-    print("-Methods");
-    foreach (var met in type.GetMethods())
-    {
-        print(met.ToString());
-    }
-    print("-Properties");
-    foreach (var prop in type.GetProperties())
-    {
-        print(prop.ToString());
-    }
-    print("-Fields");
-    foreach (var fld in type.GetFields())
-    {
-        print(fld.ToString());
-    }
 }
 
 update {
