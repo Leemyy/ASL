@@ -258,7 +258,7 @@ init {
         {
             var scanner = new SignatureScanner(game, page.BaseAddress, (int)page.RegionSize);
 
-            var ptr = scanner.Scan(pattern, 0x10);
+            var ptr = scanner.Scan(pattern, 0x4);
             if (ptr != IntPtr.Zero)
             {
                 axiomClass = (int)ptr;
