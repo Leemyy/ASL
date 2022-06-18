@@ -3,7 +3,25 @@
  * AutoSplitter by Atorizil and Leemyy.
  */
 
-state("ROTTR", "820.0"){
+state("ROTTR", "[Epic Games] 1027.0"){
+	bool LegacyFMV : 0xFE24A0;
+	int Cutscene : 0x19133C4;
+	bool FMV : 0x228DD1C;
+	bool Loading : 0x2BBDA20, 0xC8;
+	long Alive : 0x22462E8;
+	float Percentage : 0xFE4730;
+	uint PlayTime : 0x21C5B00, 0x144;
+	int XP : 0x10E1A40, 0x30, 0x280, 0x18, 0x38;
+	float X : 0x14E7870;
+	float Y : 0x14E7874;
+	float Z : 0x14E7878;
+	int XI : 0x14E7870;
+	int YI : 0x14E7874;
+	int ZI : 0x14E7878;
+	string50 Area : 0x2BE4991;
+}
+
+state("ROTTR", "[Steam] 820.0"){
 	// Most address' defined here is the same as 813.4
 	// LegacyLoading never went to 1 so I couldn't refind it
 	// I accidently found LegacyFMV so it may as well be used
@@ -25,13 +43,14 @@ state("ROTTR", "820.0"){
 	string50 Area : 0x2CDE661;
 }
 
-state("ROTTR", "813.4"){
+state("ROTTR", "[Steam] 813.4"){
 	bool LegacyLoading	: 0xF25FB8;
-	bool LegacyFMV		: 0xF9A990;
-	int  Cutscene		: 0x1A22014;
-	bool FMV			: 0x22D83D8;
-	bool Loading		: 0x2CCD940, 0xC8;
-	long Alive			: 0x2CF3578; //counts up at about 1000000 per second
+	bool LegacyFMV		: 0xF9A990; // C6 01 00 85 C0 74 58 48 89 5C 24 30
+	int  Cutscene		: 0x1A22014; // F3 0F 11 48 04 F3 0F 5C 08
+	bool FMV			: 0x22D83D8; // C6 05 ?? ?? ?? ?? 00 e8 ?? ?? ?? ?? 48 83 c4 28
+	bool Loading		: 0x2CCD940, 0xC8; // 'C6 43 F0 00 F3 0F 58 ?? E4 F3 0F', first address
+	//counts up at about 1000000 per second
+	long Alive			: 0x2CF3578;
 	float Percentage	: 0x1A21EE8, 0xC38;
 	uint PlayTime		: 0x22D4690, 0x144;
 	int XP				: 0x1092680, 0x0, 0x280, 0x18, 0x38;
@@ -253,11 +272,14 @@ shutdown{
 init{
 	switch(modules.First().ModuleMemorySize)
 	{
+		case 57122816:
+			version = "[Epic Games] 1027.0";
+			break;
 		case 296157184:
-			version = "820.0";
+			version = "[Steam] 820.0";
 			break;
 		case 137060352:
-			version = "813.4";
+			version = "[Steam] 813.4";
 			break;
 	}
 	timer.IsGameTimePaused = false;
