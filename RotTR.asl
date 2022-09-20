@@ -3,7 +3,26 @@
  * AutoSplitter by Atorizil and Leemyy.
  */
 
+ state("ROTTR", "[Steam] 1027.0") {
+	bool LegacyFMV : 0xFF5A30;
+	int Cutscene : 0x1A7B744;
+	bool FMV : 0x2401D0C;
+	bool Loading : 0x2D36A70, 0xC8;
+	long Alive : 0x23BFE18;
+	float Percentage : 0xFF7CF0;
+	uint PlayTime : 0x2339AE0, 0x144;
+	int XP : 0x2D597D0, 0x48, 0x280, 0x18, 0x38;
+	float X : 0x165B8C0;
+	float Y : 0x165B8C4;
+	float Z : 0x165B8C8;
+	float XI : 0x165B8C0;
+	float YI : 0x165B8C4;
+	float ZI : 0x165B8C8;
+	string50 Area : 0x2D3F238;
+ }
+
 state("ROTTR", "[Epic Games] 1027.0"){
+	             
 	bool LegacyFMV : 0xFE24A0;
 	int Cutscene : 0x19133C4;
 	bool FMV : 0x228DD1C;
@@ -275,6 +294,9 @@ init{
 		case 57122816:
 			version = "[Epic Games] 1027.0";
 			break;
+		case 58658816:
+			version = "[Steam] 1027.0";
+			break;
 		case 296157184:
 			version = "[Steam] 820.0";
 			break;
@@ -304,6 +326,7 @@ exit{
 
 update{
 	//print(modules.First().ModuleMemorySize.ToString());
+	print(current.LegacyFMV.ToString());
 	if (settings["autopause"])
 	{
 		bool prev = vars.crashTime;
@@ -344,11 +367,12 @@ start{
 }
 
 isLoading{
+	if (current.Area != "st_cistern")
 		return current.Cutscene != 0 || current.FMV || current.Loading || current.Percentage < .1f || vars.crash || vars.crashTime;
-		if(current.Area != "st_cistern")
-			return current.LegacyFMV;
-		if(version == "813.4")
-			return current.LegacyLoading;
+	else if (version == "[Steam] 813.4")
+		return current.Cutscene != 0 || current.LegacyFMV || current.LegacyFMV || current.FMV || current.Loading || current.Percentage < .1f || vars.crash || vars.crashTime;
+	else
+		return current.Cutscene != 0 || current.LegacyFMV || current.FMV || current.Loading || current.Percentage < .1f || vars.crash || vars.crashTime;
 }
 
 split{

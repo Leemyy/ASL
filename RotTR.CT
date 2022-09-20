@@ -305,6 +305,106 @@
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
+    <CheatEntry>
+      <ID>107</ID>
+      <Description>"Steam 1027.0"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <Color>FF8000</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>85</ID>
+          <Description>"XP"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"ROTTR.exe"+02D597D0</Address>
+          <Offsets>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>280</Offset>
+            <Offset>48</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>88</ID>
+          <Description>"Area"</Description>
+          <VariableType>String</VariableType>
+          <Length>13</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>ROTTR.exe+2D3F238</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>90</ID>
+          <Description>"PlayTime"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"ROTTR.exe"+02339AE0</Address>
+          <Offsets>
+            <Offset>144</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>100</ID>
+          <Description>"Percentage"</Description>
+          <VariableType>Float</VariableType>
+          <Address>ROTTR.exe+FF7CF0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>112</ID>
+          <Description>"Loading"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"ROTTR.exe"+02D36A70</Address>
+          <Offsets>
+            <Offset>C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>108</ID>
+          <Description>"Cutscene"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"ROTTR.exe"+1A7B744</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>109</ID>
+          <Description>"LegacyFMV"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>"ROTTR.exe"+FF5A30</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>110</ID>
+          <Description>"FMV"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>"ROTTR.exe"+2401D0C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>106</ID>
+          <Description>"Alive"</Description>
+          <VariableType>8 Bytes</VariableType>
+          <Address>ROTTR.exe+23BFE18</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>119</ID>
+          <Description>"X"</Description>
+          <VariableType>Float</VariableType>
+          <Address>ROTTR.exe+165B8C0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>118</ID>
+          <Description>"Y"</Description>
+          <VariableType>Float</VariableType>
+          <Address>ROTTR.exe+165B8C4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>115</ID>
+          <Description>"Z"</Description>
+          <VariableType>Float</VariableType>
+          <Address>ROTTR.exe+165B8C8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
