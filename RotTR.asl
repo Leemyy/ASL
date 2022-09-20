@@ -326,7 +326,6 @@ exit{
 
 update{
 	//print(modules.First().ModuleMemorySize.ToString());
-	print(current.LegacyFMV.ToString());
 	if (settings["autopause"])
 	{
 		bool prev = vars.crashTime;
