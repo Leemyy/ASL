@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CheatTable CheatEngineTableVersion="42">
+<CheatTable CheatEngineTableVersion="45">
   <CheatEntries>
     <CheatEntry>
       <ID>70</ID>
       <Description>"Steam 813.4"</Description>
-      <Options moManualExpandCollapse="1"/>
+      <Options moHideChildren="1" moManualExpandCollapse="1"/>
       <Color>FF8000</Color>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
@@ -201,7 +201,7 @@
     <CheatEntry>
       <ID>71</ID>
       <Description>"Epic Games 1027.0"</Description>
-      <Options moManualExpandCollapse="1"/>
+      <Options moHideChildren="1" moManualExpandCollapse="1"/>
       <Color>FF8000</Color>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
@@ -308,7 +308,7 @@
     <CheatEntry>
       <ID>107</ID>
       <Description>"Steam 1027.0"</Description>
-      <Options moManualExpandCollapse="1"/>
+      <Options moHideChildren="1" moManualExpandCollapse="1"/>
       <Color>FF8000</Color>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
