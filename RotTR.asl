@@ -3,6 +3,24 @@
  * AutoSplitter by Atorizil and Leemyy.
  */
 
+state("ROTTR", "[Steam] 0.0") {
+	bool LegacyFMV   : 0xFF4A30;
+	int Cutscene     : 0x1A7A834;
+	bool FMV         : 0x2400D8C;
+	bool Loading     : 0x2D30AC0, 0xC8;
+	long Alive       : 0x2E204FC;
+	float Percentage : 0xFF6CF0;
+	uint PlayTime    : 0x2338B68, 0x144;
+	int XP           : 0x2D58850, 0x48, 0x280, 0x18, 0x38;
+	float X          : 0x165A8D0;
+	float Y          : 0x165A8D4;
+	float Z          : 0x165A8D8;
+	float XI         : 0x165A8D0;
+	float YI         : 0x165A8D4;
+	float ZI         : 0x165A8D8;
+	string50 Area    : 0x2D3E2E8;
+}
+
  state("ROTTR", "[Steam] 1027.0") {
 	bool LegacyFMV : 0xFF5A30;
 	int Cutscene : 0x1A7B744;
@@ -71,7 +89,7 @@ state("ROTTR", "[Steam] 813.4"){
 	//counts up at about 1000000 per second
 	long Alive			: 0x2CF3578;
 	float Percentage	: 0x1A21EE8, 0xC38;
-	uint PlayTime		: 0x22D4690, 0x144;
+	uint PlayTime		: 0x22D4690, 0x144; // 89 90 44 01 00 00
 	int XP				: 0x1092680, 0x0, 0x280, 0x18, 0x38;
 	float X				: 0x15F6730;
 	float Y				: 0x15F6734;
@@ -291,6 +309,9 @@ shutdown{
 init{
 	switch(modules.First().ModuleMemorySize)
 	{
+		case 58654720:
+			version = "[Steam] 0.0";
+			break;
 		case 57122816:
 			version = "[Epic Games] 1027.0";
 			break;
