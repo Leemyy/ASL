@@ -1,7 +1,26 @@
 /*
  * Load Removal by Aphox, Dread, Atorizil and Leemyy.
  * AutoSplitter by Atorizil and Leemyy.
+ * Updated for Microsoft Store by TpRedNinja
  */
+
+state("ROTTR_UAP", "MS") {
+	bool LegacyFMV   : 0x19066F0; // idk if this is correct, but i have it and seems to work the same way as the others 0 for not loading or no FMV, 1 for loading or FMV
+	int Cutscene     : 0x18F4444; // this should be correct
+	bool FMV         : 0xEF9A84; // Still need to test to see if this is correct
+	bool Loading     : 0x018E7448, 0x820, 0x5B8, 0x618, 0x768; // Need to actually find the correct pointer for now this should work
+	long Alive       : 0x21E3018; // Just counts up continuously just do unknown initial 8byte and just keep on saying its increasing in every instance of the game
+	float Percentage : 0x120A830; // not much to say its a percentage of the game completed so...
+	uint PlayTime    : 0x21A6D30, 0x144; // In game timer seems to go up with in mainmenu
+	int XP           : 0x02BD00C0, 0x38, 0x280, 0x18, 0x38; // current player xp, basically the same pointer as the others but only 1 different offset
+	float X          : 0x23658D0; // float x value
+	float Y          : 0x23658D4; // float y value
+	float Z          : 0x23658D8; // float z value
+	float XI         : 0x23658D0; // int x value
+	float YI         : 0x23658D4; // int y value
+	float ZI         : 0x23658D8; // int z value
+	string50 Area    : 0x2BB13E8; // area name, may use for splits in the future if i decide to add a shit ton of new ones and people want new options
+}
 
 state("ROTTR", "[Steam] 0.0") {
 	bool LegacyFMV   : 0xFF4A30;
@@ -60,9 +79,9 @@ state("ROTTR", "[Epic Games] 1027.0"){
 
 state("ROTTR", "[Steam] 820.0"){
 	// Most address' defined here is the same as 813.4
-	// LegacyLoading never went to 1 so I couldn't refind it
-	// I accidently found LegacyFMV so it may as well be used
-	// Loading was hard to refind so it would probably be the culprit is stuff goes wrong
+	// LegacyLoading never went to 1 so I couldn't re-find it
+	// I accidentally found LegacyFMV so it may as well be used
+	// Loading was hard to re-find so it would probably be the culprit is stuff goes wrong
 	bool LegacyFMV : 0xF85AB0;
 	int Cutscene : 0x1A0D094;
 	bool FMV : 0x22C345C;
@@ -309,6 +328,9 @@ shutdown{
 init{
 	switch(modules.First().ModuleMemorySize)
 	{
+		case 57536512:
+			version = "MS";
+			break;
 		case 58654720:
 			version = "[Steam] 0.0";
 			break;
@@ -325,6 +347,7 @@ init{
 			version = "[Steam] 813.4";
 			break;
 	}
+	
 	timer.IsGameTimePaused = false;
 
 	Action<string> Log =
