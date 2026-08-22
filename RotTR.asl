@@ -16,9 +16,9 @@ state("ROTTR_UAP", "MS") {
 	float X          : 0x23658D0; // float x value
 	float Y          : 0x23658D4; // float y value
 	float Z          : 0x23658D8; // float z value
-	float XI         : 0x23658D0; // int x value
-	float YI         : 0x23658D4; // int y value
-	float ZI         : 0x23658D8; // int z value
+	int XI         	 : 0x23658D0; // int x value
+	int YI         	 : 0x23658D4; // int y value
+	int ZI         	 : 0x23658D8; // int z value
 	string50 Area    : 0x2BB13E8; // area name, may use for splits in the future if i decide to add a shit ton of new ones and people want new options
 }
 
@@ -34,9 +34,9 @@ state("ROTTR", "[Steam] 0.0") {
 	float X          : 0x165A8D0;
 	float Y          : 0x165A8D4;
 	float Z          : 0x165A8D8;
-	float XI         : 0x165A8D0;
-	float YI         : 0x165A8D4;
-	float ZI         : 0x165A8D8;
+	int XI         	 : 0x165A8D0;
+	int YI         	 : 0x165A8D4;
+	int ZI         	 : 0x165A8D8;
 	string50 Area    : 0x2D3E2E8;
 }
 
@@ -52,9 +52,9 @@ state("ROTTR", "[Steam] 0.0") {
 	float X : 0x165B8C0;
 	float Y : 0x165B8C4;
 	float Z : 0x165B8C8;
-	float XI : 0x165B8C0;
-	float YI : 0x165B8C4;
-	float ZI : 0x165B8C8;
+	int XI : 0x165B8C0;
+	int YI : 0x165B8C4;
+	int ZI : 0x165B8C8;
 	string50 Area : 0x2D3F238;
  }
 
