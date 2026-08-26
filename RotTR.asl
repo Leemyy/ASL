@@ -34,9 +34,9 @@ state("ROTTR", "[Steam] 0.0") {
 	float X          : 0x165A8D0;
 	float Y          : 0x165A8D4;
 	float Z          : 0x165A8D8;
-	int XI         	 : 0x165A8D0;
-	int YI         	 : 0x165A8D4;
-	int ZI         	 : 0x165A8D8;
+	int XI         : 0x165A8D0;
+	int YI         : 0x165A8D4;
+	int ZI         : 0x165A8D8;
 	string50 Area    : 0x2D3E2E8;
 }
 
